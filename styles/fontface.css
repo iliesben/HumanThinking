@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Circular';
+    src : url('../fonts/CircularStd-Book.ttf')
+}
+
+@font-face {
+    font-family: 'Circular-Black';
+    src : url('../fonts/CircularStd-Black.ttf')
+}
+
+@font-face {
+    font-family: 'Circular-Medium';
+    src : url('../fonts/CircularStd-Meidum.ttf')
+}

@@ -1,38 +1,121 @@
-*
+body
 {
-    font-family: 'Circular-Medium';
+    overflow: hidden;
 }
+
+.text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+    font-size: 2.5vw;
+    line-height: 6vh;
+    color: rgb(25, 12, 73);
+    height: 100%;
+    margin: 200px auto;
+    position: absolute;
+    left: calc(50% - 960px / 2);
+    font-family: "Circular-Black";
+}
+
+.continuerClick, .continuerClick2, .continuerClick3
+{
+    position: relative;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
 .game__content
 {
     position: absolute; 
     width: 100%;
     height: 100%;
-    text-align: center;
     display: flex; 
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
-    
+    font-family: "Circular";
+    text-align: center;
+    margin-top: 10vh;
+    /* pointer-events: none; */
+    background-color: rgba(255, 0, 0, 0.116)a(255, 0, 0, 0.233)a(255, 0, 0, 0);
+    animation: gameCounterKey 4s ease-in;
 }
 .game__content__question
 {
     display: flex;
     justify-content: center;
-    width: 800px;
-    font-size : 75px;
-    font-family: 'Circular-Medium';
+    width: 90vw;
+    margin: 0 auto;
+    font-size : 2.8vw;
+    font-weight: bolder;
 }
 
 .game__content__answer
 {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    font-family: 'Circular-Medium';
+    margin-top: 50vh;
+    font-size: 1.2vw;
+    /* background-color: red; */
+
+    /* oh non tu ma reperer */
 }
+.game__content__answer p
+{
+height: 10vh;
+cursor: pointer;
+position: relative
+/* background-color: blue; */
+}
+.question10{
+    font-size: 2vw;
+}
+.game__content__answer p::before
+{
+content: " ";
+left: -2vw;
+top: 0;
+position: absolute;
+width: 1vw;
+height: 1vw;
+border-radius: 50%;
+border: solid 0.2vw #FF0000;
+transition: 0.2s;
+}
+.game__content__answer p:hover::before
+{
+    background-color: #FF0000;
+}
+
 .game__content__answer-number
 {
-    font-family: 'Circular-Medium';
+    margin: 0 2.5vw;
+}
+.redText{
+    color: rgba(255, 0, 0, 0.719);
+}
+.endPage1, .endPage2, .endPage3
+{
+    display: none;
+}
 
-    margin: 0 75px;
+.gameContainer{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes gameCounterKey{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

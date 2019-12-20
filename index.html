@@ -10,17 +10,32 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">H.</a></div>
+            <ul>
+                <li><a href="#">Synopsis</a></li>
+                <li><a href="pages/game.html">Launch the experience</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="home__content">
         <h1 class="home__content__title">Human Thinking.</h1>
         <p class="home__content__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consectetur expedita fugit placeat, cumque quo ratione veniam distinctio impedit facilis dolorem pariatur ipsam odit obcaecati numquam rem magni optio laborum minima labore vero quia tempora? 
         </p>
         <div class="home__content__launch">
-            <a class="launch__button" href="#">LAUNCH THE GAME</a>
+            <a class="launch__button" href="pages/game.html">LAUNCH THE GAME</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="28" viewBox="0 0 37 28"><defs><style>.a,.b{fill:none;}.a{stroke:#767676;stroke-width:2px;}.c,.d{stroke:none;}.d{fill:#767676;}</style></defs><g transform="translate(0 1)"><line class="a" x2="22" transform="translate(0 13.5)"/><g class="b" transform="translate(-2006 -774.905)"><path class="c" d="M2031.5,788.5l-3.995,3.6v-7.2Z"/><path class="d" d="M 2027.5029296875 792.1007080078125 L 2027.5029296875 784.90478515625 L 2031.49755859375 788.5028076171875 L 2027.5029296875 792.1007080078125 Z"/></g><path class="a" d="M2017.811,794.623a13,13,0,1,0-.2-12.893" transform="translate(-2006 -775)"/></g></svg>
         </div>
         
     </div>
+    
     <script src="scripts/vendor/three.min.js"></script>
+    <script src="scripts/vendor/three.js"></script>
+    <script  src="scripts/vendor/OBJLoader.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+    <script src="scripts/home.js"></script>
 </body>
 </html>

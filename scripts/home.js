@@ -24,8 +24,6 @@ window.addEventListener('resize', ()=> {
         
         const light = new THREE.DirectionalLight( 'white', 1 )
         light.position.set( 0, 1, 1 )
-        // light.rotation.x = Math.PI
-        // light.lookAt(0,-200,-15)
 
 
         const light2 = new THREE.AmbientLight( 'white', 0.15 );
@@ -41,7 +39,7 @@ window.addEventListener('resize', ()=> {
         loader.load( '../assets/desert.obj',
             // called when resource is loaded
             function ( loadedMesh ) {
-                var material = new THREE.MeshLambertMaterial({color: 'white', flatShading : true});
+                var material = new THREE.MeshLambertMaterial({color: 'white'});
 
                 loadedMesh.children.forEach(function (child) {
                     child.material = material;
@@ -49,7 +47,9 @@ window.addEventListener('resize', ()=> {
                     child.geometry.computeVertexNormals();
                 });
                 loadedMesh.scale.set(1, 1, 1);
-                loadedMesh.position.set(0,-15,5)
+                loadedMesh.position.set(3,-15,5)
+                loadedMesh.rotation.set(0.12,0,0)
+
                 // loadedMesh.rotation.y = Math.PI
                 
                 console.log(loadedMesh)
@@ -75,6 +75,25 @@ window.addEventListener('resize', ()=> {
 //Quoi ? Change ce que tu veux
 
 
+const cone = new THREE.ConeBufferGeometry(2,2,3)
+const coneMaterial = new THREE.MeshPhysicalMaterial({
+    color: '#cccccc', 
+    flatShading : true,
+    roughness: 0.7,
+    reflectivity : 1, 
+    metalness: 0.5
+                        });
+const coneMesh = new THREE.Mesh(cone, coneMaterial) 
+
+
+
+
+coneMesh.rotation.set(0, 2.2, 2)
+coneMesh.position.set(0,-1, -5) 
+
+
+
+// scene.add(coneMesh)
 
 
 

@@ -171,8 +171,6 @@
                 loadedMesh.scale.set(6, 1, 4);
                 loadedMesh.position.set(0,-35,5)
                 
-                console.log(loadedMesh)
-                
                 window.addEventListener('mousemove', (event) =>
                 {
                     cursor.x = event.clientX /window.innerWidth - 0.5
@@ -236,14 +234,10 @@ window.addEventListener('resize', ()=> {
 
 })
 
-// console.log(controls);
 
 
 const animate = () => {
     requestAnimationFrame( animate );
-    // camera.position.x = cursor.x * 10
-    // camera.position.y = cursor.y * 10
-    // console.log(controls.targ);    
     meshIcosahedron.rotation.x -= 0.005;
     meshIcosahedron.rotation.y += 0.005;
     meshTetrahedron.rotation.x -= 0.005;
@@ -446,7 +440,6 @@ answer3Q2.addEventListener ('click', () =>{
 answer1Q3.addEventListener ('click', () =>{
     movingAnimationUpOrange()
     debloqueR4Q5 = true
-    console.log(debloqueR4Q5)
 })
 answer2Q3.addEventListener ('click', () =>{
     movingAnimationUpWhite()
@@ -719,12 +712,6 @@ answer3Q13.addEventListener('click', ()  =>
     
 })
 
-
-
- // 11 BIS PAS ENCORE FAIT 
-
-//  console.log(audioClick);
-
 let compteur = 0
 
 answers.forEach(function(event) {
@@ -869,7 +856,6 @@ answers.forEach(function(event) {
             break
             case 12 :
                     questions[compteur].style.display = 'block'
-                    // console.log(questions[compteur]);
                     answer1Q12.style.display = 'none'
                     answer2Q12.style.display = 'none'
                     answer3Q12.style.display = 'none'

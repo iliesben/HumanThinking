@@ -66,6 +66,7 @@ body
 }
 .game__content__answer p
 {
+ font-size: 2vw;
 height: 10vh;
 cursor: pointer;
 position: relative
@@ -78,7 +79,7 @@ position: relative
 {
 content: " ";
 left: -2vw;
-top: 0;
+top: 0.5vw;
 position: absolute;
 width: 1vw;
 height: 1vw;

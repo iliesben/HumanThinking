@@ -158,7 +158,7 @@
 
        let loader = new THREE.OBJLoader();
         // load a resource
-        loader.load( '../assets/desert.obj',
+        loader.load( '../desert.obj',
             // called when resource is loaded
             function ( loadedMesh ) {
                 let material = new THREE.MeshLambertMaterial({color: 'white', flatShading : true});
@@ -972,7 +972,7 @@ movingAnimationUpRouge= () =>
     setTimeout(( ) => 
     {
         loadedMeshZ()
-        scene.background = new THREE.Color( 0xff2600 );
+        scene.background = new THREE.Color( 0xefd6da );
         paticlesMove()
         zCamera += 2500
         moveAllGeometry()

@@ -1,3 +1,3 @@
 # HumanThinking
 
-Web site : https://iliesben.github.io/HumanThinking/
+Website : https://iliesben.github.io/HumanThinking/
